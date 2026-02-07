@@ -44,7 +44,23 @@
   font-size: 22px;
   color: black;
   margin-bottom: 7.5px;
-  font-family: "Playfair Display", serif;
   font-weight: bold;
   text-transform: capitalize;
+}
+.side__job{
+  font-size: 14px;
+  color:  rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+side__job > span{
+  color: rgba(0,0,0,0.7);
+}
+.sidebar__copyright {
+  padding: 0 20px;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 12px;
+  line-height: 2;
 }
