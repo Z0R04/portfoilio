@@ -40,3 +40,11 @@
 .sidebar__copyright span {
   color: rgb(13, 50, 77);
 }
+.side__name {
+  font-size: 22px;
+  color: black;
+  margin-bottom: 7.5px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
