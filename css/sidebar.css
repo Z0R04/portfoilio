@@ -1,0 +1,42 @@
+.sidebar__hamburger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px 15px;
+  font-size: 24px;
+  z-index: 10;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+.sidebar__hamburger__translate {
+  transform: translateX(300px);
+}
+
+.sidebar__content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  z-index: 5;
+  height: 100vh;
+  background: #999;
+  transition-duration: 500ms;
+  transform: translateX(-300px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar__content ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar__hamburger__translate + .sidebar__content {
+  transform: translateX(0);
+}
+.sidebar__copyright i,
+.sidebar__copyright span {
+  color: rgb(13, 50, 77);
+}

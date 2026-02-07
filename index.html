@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Angela is a full stack Developer" />
+    <title>Angela's Portfoilio</title>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- css files -->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/skill.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <i
+        id="hamburger"
+        class="fa-solid fa-bars sidebar__hamburger"
+        aria-label="Toggle navigation"
+      ></i>
+
+      <div class="sidebar__content">
+        <h1 class="side__name">Angela Kattel</h1>
+        <h2 class="side__job">Developer<span> in Nepal</span></h2>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="hero">
+      <h1>
+        Hi!<br />I am Angela<br />
+        I am a Developer
+      </h1>
+      <p>I am Elecronics Communication and Information Engineer</p>
+      <button>Contact me <i class="fa-solid fa-envelope"></i></button>
+    </section>
+    <section id="about" class="section">
+      <p class="section_title">about me</p>
+      <p class="section_subtitle">Who am i?</p>
+
+      <p class="about__description">
+        <strong> Hi I am Angela. </strong>
+
+        I am a student at Nationl college of Enngineering in my third year of my
+        undergraduate studies of Electronics Communicaion and Information
+        engineering.
+      </p>
+
+      <div class="about__skills">
+        <div>
+          <i class="fa-solid fa-ear-listen"></i>
+          <h3>web development</h3>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-globe"></i>
+          <h3>web design</h3>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h3>Machine learning</h3>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-mobile"></i>
+          <h3>web development</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="section_title">My speciality</p>
+      <p class="section_subtitle">My skills</p>
+
+      <div class="outerbox">
+        <div class="skill__box">
+          <p>Html</p>
+          <div class="skill__grey__box">
+            <div class="skill__color__box">
+              <span>88%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill__box">
+          <p>Js</p>
+          <div class="skill__grey__box">
+            <div
+              class="skill__color__box"
+              style="width: 48%; color: red; background: red"
+            >
+              <span>48%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill__box">
+          <p>React.js</p>
+          <div class="skill__grey__box">
+            <div
+              class="skill__color__box"
+              style="width: 10%; color: purple; background: purple"
+            >
+              <span>10%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill__box">
+          <p>Python</p>
+          <div class="skill__grey__box">
+            <div
+              class="skill__color__box"
+              style="width: 40%; color: yellow; background: yellow"
+            >
+              <span>40%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill__box">
+          <p>C</p>
+          <div class="skill__grey__box">
+            <div
+              class="skill__color__box"
+              style="width: 59%; color: green; background: green"
+            >
+              <span>59%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const hamburger = document.querySelector("#hamburger");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("sidebar__hamburger__translate");
+      });
+    </script>
+  </body>
+</html>
