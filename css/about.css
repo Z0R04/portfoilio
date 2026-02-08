@@ -41,12 +41,30 @@
   text-transform: capitalize;
   color: black;
 }
+
+.about__happy {
+  padding: 30px;
+  background: #678669;
+}
+
 .about__happy > h2 {
-  
+  font-family: "Playfair Display", serif;
   color: black;
   font-weight: normal;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 1.5;
   font-size: 30px;
+}
+
+.about__happy > button {
+  font-family: "Quicksand";
+  font-size: 12px;
+  font-weight: normal;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid black;
+  padding: 2px 10px;
+  background: transparent;
 }
 
