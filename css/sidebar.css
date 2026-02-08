@@ -114,11 +114,14 @@ side__job > span {
   body {
     margin-left: 300px;
   }
+
   .sidebar__hamburger {
     display: none;
   }
+
   .sidebar__content {
-    left: 0 !important;
-    transform: unset !important; /*edge case for mobile to desktop mode switch, while sidebar visible*/
+    position: fixed;
+    left: 0;
+    transform: translateX(0);
   }
 }
