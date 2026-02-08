@@ -19,7 +19,7 @@
   width: 300px;
   z-index: 5;
   height: 100vh;
-  background: #999;
+  background: #bfca9d;
   transition-duration: 500ms;
   transform: translateX(-300px);
   display: flex;
@@ -38,7 +38,7 @@
 }
 .sidebar__copyright i,
 .sidebar__copyright span {
-  color: rgb(13, 50, 77);
+  color: rgb(7, 25, 37);
 }
 .side__name {
   font-size: 22px;
@@ -71,4 +71,41 @@ side__job > span {
   border-radius: 50%;
   margin-top: 50px;
   margin-bottom: 30px;
+}
+.sidebar__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.sidebar__list__item {
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  cursor: pointer;
+}
+.sidebar__list__item {
+  transition: transform 0.2s ease;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #18657a;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.sidebar a:hover {
+  color: #0b3d4c;
+  text-shadow: 0 0 6px rgba(12, 51, 51, 0.6);
+}
+
+
+.sidebar__list__item a {
+  text-decoration: none;
+  color: rgb(4, 31, 9);
 }
