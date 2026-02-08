@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/skill.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/contact.css" />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,6 +38,7 @@
       ></i>
 
       <div class="sidebar__content">
+        <img class="sidebar__image" src="images/angela.jpg" alt="imagee" />
         <h1 class="side__name">Angela Kattel</h1>
         <h2 class="side__job">Developer<span> in Nepal</span></h2>
 
@@ -55,15 +57,14 @@
           </li>
         </ul>
 
-        <div class="sidebar__copyright">
-          <i class="fa-regular fa-copyright"></i
-          ><span> 2024 Angela Kattel</span>       
+        <p class="sidebar__copyright">
+          &copy; 2024 All rights reserved | Made with &#128153; by
+          <span>Angela</span>
+        </p>
       </div>
     </nav>
     <section id="hero">
-      <h1>
-        Hi!<br />I am Angela<br />       
-      </h1>
+      <h1>Hi!<br />I am Angela<br /></h1>
       <p>I am Elecronics Communication and Information Engineer</p>
       <button>Contact me <i class="fa-solid fa-envelope"></i></button>
     </section>
@@ -97,8 +98,12 @@
 
         <div>
           <i class="fa-solid fa-mobile"></i>
-          <h3>web development</h3>
+          <h3>Graphics design</h3>
         </div>
+      </div>
+      <div class="about__happy">
+        <h2>I am happily learning web development</h2>
+        <button>Hire me</button>
       </div>
     </section>
 
@@ -127,13 +132,13 @@
           </div>
         </div>
         <div class="skill__box">
-          <p>React.js</p>
+          <p>C++</p>
           <div class="skill__grey__box">
             <div
               class="skill__color__box"
               style="width: 10%; color: purple; background: purple"
             >
-              <span>10%</span>
+              <span>30%</span>
             </div>
           </div>
         </div>
@@ -162,6 +167,34 @@
         </div>
       </div>
     </section>
+    <section id="contact" class="section">
+      <span class="section__title">get in touch</span>
+      <h2 class="section__subtitle">contact</h2>
+
+      <form
+        action=""
+        id="contactForm"
+        class="contact__form"
+        onsubmit="submitForm(event)"
+      >
+        <input
+          type="text"
+          placeholder="Name"
+          id="name"
+          name="name"
+          class="contact__input"
+        />
+        <textarea
+          id="message"
+          class="contact__textarea"
+          name="message"
+          placeholder="Message"
+          rows="4"
+        ></textarea>
+        <button class="contact__button" type="submit">Send Message</button>
+      </form>
+    </section>
+
     <script>
       const hamburger = document.querySelector("#hamburger");
       hamburger.addEventListener("click", () => {

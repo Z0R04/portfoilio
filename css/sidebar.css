@@ -47,14 +47,14 @@
   font-weight: bold;
   text-transform: capitalize;
 }
-.side__job{
+.side__job {
   font-size: 14px;
-  color:  rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
   text-transform: uppercase;
 }
-side__job > span{
-  color: rgba(0,0,0,0.7);
+side__job > span {
+  color: rgba(0, 0, 0, 0.7);
 }
 .sidebar__copyright {
   padding: 0 20px;
@@ -63,4 +63,12 @@ side__job > span{
   text-align: center;
   font-size: 12px;
   line-height: 2;
+}
+.sidebar__image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
