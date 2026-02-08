@@ -96,14 +96,15 @@ side__job > span {
 .sidebar a {
   text-decoration: none;
   color: #18657a;
-  transition: color 0.25s ease, text-shadow 0.25s ease;
+  transition:
+    color 0.25s ease,
+    text-shadow 0.25s ease;
 }
 
 .sidebar a:hover {
   color: #0b3d4c;
   text-shadow: 0 0 6px rgba(12, 51, 51, 0.6);
 }
-
 
 .sidebar__list__item a {
   text-decoration: none;

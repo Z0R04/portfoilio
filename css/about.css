@@ -5,9 +5,9 @@
 }
 .about__skills > div {
   margin-bottom: 50px;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid rgb(32, 80, 138);
   padding: 24px;
-  color: blue;
+  color: rgb(37, 69, 109);
 }
 @media screen and (min-width: 768px) {
   .about__skills {
@@ -20,16 +20,16 @@
 }
 
 .about__skills > div:nth-child(2) {
-  border-bottom: 2px solid red;
-  color: red;
+  border-bottom: 2px solid rgb(72, 5, 5);
+  color: rgb(139, 12, 12);
 }
 .about__skills > div:nth-child(3) {
   border-bottom: 2px solid green;
-  color: green;
+  color: rgb(3, 22, 3);
 }
 .about__skills > div:nth-child(4) {
-  border-bottom: 2px solid yellow;
-  color: yellow;
+  border-bottom: 2px solid rgb(92, 84, 141);
+  color: rgb(54, 34, 95);
 }
 .about__skills i {
   font-size: 30px;

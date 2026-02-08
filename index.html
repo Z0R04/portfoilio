@@ -31,10 +31,7 @@
   </head>
   <body>
     <nav class="sidebar">
-      <i
-        id="hamburger"
-        class="fa-solid fa-bars sidebar__hamburger">
-      </i>
+      <i id="hamburger" class="fa-solid fa-bars sidebar__hamburger"> </i>
 
       <div class="sidebar__content">
         <img class="sidebar__image" src="images/angela.jpg" alt="imagee" />
@@ -57,14 +54,14 @@
         </ul>
 
         <p class="sidebar__copyright">
-          &copy; 2024 All rights reserved | Made with &#128153; by
+          &copy; 2026 All rights reserved | Made with &#128153; by
           <span>Angela</span>
         </p>
       </div>
     </nav>
     <section id="hero">
-      <h1>Hi!<br />I am Angela<br /></h1>
-      <p>I am Elecronics Communication and Information Engineer</p>
+      <h1>Hi!<br />I am Angela <br /></h1>
+      <p>Elecronics Communication and Information Engineer</p>
       <button>Contact me <i class="fa-solid fa-envelope"></i></button>
     </section>
     <section id="about" class="section">
@@ -97,7 +94,7 @@
 
         <div>
           <i class="fa-solid fa-mobile"></i>
-          <h3>Graphics design</h3>
+          <h3>Graphic design</h3>
         </div>
       </div>
       <div class="about__happy">
@@ -124,7 +121,7 @@
           <div class="skill__grey__box">
             <div
               class="skill__color__box"
-              style="width: 48%; color: red; background: red"
+              style="width: 48%; color: rgb(111, 24, 43); background: rgb(115, 10, 62)"
             >
               <span>48%</span>
             </div>
@@ -135,10 +132,11 @@
           <div class="skill__grey__box">
             <div
               class="skill__color__box"
-              style="width: 10%; color: purple; background: purple"
+              style="width: 10%; color: rgb(79, 6, 79); background: purple"
             >
               <span>30%</span>
             </div>
+            
           </div>
         </div>
         <div class="skill__box">
@@ -146,7 +144,7 @@
           <div class="skill__grey__box">
             <div
               class="skill__color__box"
-              style="width: 40%; color: yellow; background: yellow"
+              style="width: 40%; color: rgb(121, 121, 14); background: rgb(16, 73, 68)"
             >
               <span>40%</span>
             </div>
@@ -158,7 +156,7 @@
           <div class="skill__grey__box">
             <div
               class="skill__color__box"
-              style="width: 59%; color: green; background: green"
+              style="width: 59%; color: green; background: rgb(9, 88, 9)"
             >
               <span>59%</span>
             </div>
@@ -166,9 +164,10 @@
         </div>
       </div>
     </section>
+
     <section id="contact" class="section">
-      <span class="section__title">get in touch</span>
-      <h2 class="section__subtitle">contact</h2>
+      <span class="section_title">get in touch</span><br /><br />
+      <h2 class="section_subtitle">contact</h2>
 
       <form
         action=""
@@ -195,6 +194,18 @@
     </section>
 
     <script>
+      function submitForm(event) {
+        event.preventDefault();
+        var name = document.getElementById("name").value;
+        var message = document.getElementById("message").value;
+        var form = document.getElementById("contactForm");
+
+        if (!name.trim())
+          form.innerHTML +=
+            "<p style='color: red;'>Error, Name is Required</p>";
+        else console.log(JSON.stringify({ name, message }));
+      }
+
       const hamburger = document.querySelector("#hamburger");
       hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("sidebar__hamburger__translate");
